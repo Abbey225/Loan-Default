@@ -1,0 +1,50 @@
+<html >
+<head>
+  <title>Loan Default</title>
+</head>
+
+<body>
+
+<img src=
+
+"https://seeklogo.com/images/T/Teenage_Cancer_Trust-logo-E6DDA742AF-seeklogo.com.png"
+         alt="stone image", width="150", height="50", style="float:left">
+
+<img src=
+"https://seeklogo.com/images/T/Teenage_Cancer_Trust-logo-E6DDA742AF-seeklogo.com.png"
+         alt="stone image", width="200", height="70", style="float:right">
+
+<style>
+body {
+  background-image: url("https://images.pexels.com/photos/5697256/pexels-photo-5697256.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-position: 200%;
+  background-size: cover;
+}
+</style>
+
+ <div>
+	<h1>Loan Default</h1>
+
+    <form action="{{ url_for('getprediction')}}"method="post">
+    	<input type="text" name="Employed " placeholder="Employed " required="required" />
+        <input type="text" name="Bank Balance " placeholder="Bank Balance " required="required" />
+        <input type="text" name="Annual Salary" placeholder="Annual Salary" required="required" />
+
+
+
+
+
+
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">getprediction</button>
+    </form>
+
+   <br>
+   <br>
+   {{ output }}
+
+ </div>
+
+
+</body>
+</html>
